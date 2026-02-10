@@ -11,29 +11,29 @@
     overflow:hidden;
     width: 25%;
   }
-  .table-cell-satoshis {
+  .table-cell-txid {
     display: none;
-    text-align: right;
-    @media (min-width: 576px) {
+    @media (min-width: 450px) and (max-width: 767px), (min-width: 925px) {
       display: table-cell;
     }
-    @media (min-width: 768px) {
-      display: none;
+  }
+  .table-cell-satoshis {
+    text-align: left;
+    @media (min-width: 450px) and (max-width: 767px), (min-width: 925px) {
+      text-align: right;
     }
-    @media (min-width: 1100px) {
-      display: table-cell;
+    .satoshis-link {
+      display: inline;
+      @media (min-width: 450px) and (max-width: 767px), (min-width: 925px) {
+        color: white;
+        pointer-events: none;
+      }
     }
   }
   .table-cell-fiat {
     display: none;
     text-align: right;
-    @media (min-width: 485px) {
-      display: table-cell;
-    }
-    @media (min-width: 768px) {
-      display: none;
-    }
-    @media (min-width: 992px) {
+    @media (min-width: 650px) and (max-width: 767px), (min-width: 1100px) {
       display: table-cell;
     }
   }
